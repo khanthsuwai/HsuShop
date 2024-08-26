@@ -1,15 +1,12 @@
 @extends('layouts.frontend')
 @section('content')
-    {{-- @php
-        var_dump($items);
-    @endphp --}}
-
     <!-- Header-->
-    <header class="bg-dark py-5">
+    <header class="bg-dark py-5"
+        style="background-image: url('{{ asset('images/background.webp') }}'); background-size: cover; background-position: center;">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Shop in style</h1>
-                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                <h1 class="display-4 fw-bolder">Weclome To </h1>
+                <p class="lead fw-normal text-white-50 mb-0">My Little Stitchy World</p>
             </div>
         </div>
     </header>
@@ -39,7 +36,7 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 @foreach ($items as $item)
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <div class="card h-900">
                             <!-- Product image-->
                             <img class="card-img-top" src="{{ $item->image }}" alt="..." />
                             <!-- Product details-->
